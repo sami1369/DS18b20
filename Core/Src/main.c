@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "EventLoop.hpp"
+#include "EventLoop.h"
 
 /* USER CODE END Includes */
 

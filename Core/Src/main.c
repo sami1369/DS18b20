@@ -60,7 +60,10 @@ static void MX_TIM1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void delay(uint16_t time) {
+    __HAL_TIM_SET_COUNTER(&htim1, 0);
+    while ((__HAL_TIM_GET_COUNTER(&htim1)) < time);
+}
 /* USER CODE END 0 */
 
 /**
@@ -94,6 +97,7 @@ int main(void) {
   MX_USART2_UART_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_Base_Start(&htim1);
 
   /* USER CODE END 2 */
 

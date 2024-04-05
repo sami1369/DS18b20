@@ -14,8 +14,8 @@ public:
 
     //LED(GPIO gpio_);
 
-    void On();
-    void Off();
+    void on();
+    void off();
 	void toggle();
 };
 

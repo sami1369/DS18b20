@@ -6,13 +6,13 @@ LED::LED(GPIO *gpio_)
     gpio = gpio_;
 }
 
-void LED::On()
+void LED::on()
 {
     // luminance = 100;
     gpio->setPin();
 }
 
-void LED::Off()
+void LED::off()
 {
     // luminance = 0;
     gpio->clearPin();
